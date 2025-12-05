@@ -4,11 +4,11 @@ Application de Machine Learning pour prédire les salaires des professionnels IT
 
 ## 📊 Dataset
 
-- **3,000 exemples** réels du marché IT marocain
+- **5,000 exemples** réels du marché IT marocain
 - **20 entreprises multinationales** (Microsoft, Oracle, SAP, Capgemini, Accenture, etc.)
 - **10 profils IT** (Data Scientist, DevOps, Cybersécurité, Cloud Engineer, etc.)
 - **65+ technologies** (Python, React, AWS, Kubernetes, TensorFlow, etc.)
-- **Salaires:** 9,000 - 65,000 MAD/mois
+- **Salaires:** 6,000 - 65,000 MAD/mois
 
 ## 🎯 Fonctionnalités
 
