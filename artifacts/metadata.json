@@ -1,0 +1,194 @@
+{
+  "seed": 2025,
+  "data_audit": {
+    "sha256": "85bb7062848038fcc7910b08f737aef640c675b88701b35f9365bc69b4e275bb",
+    "raw_rows": 5000,
+    "usable_rows": 4954,
+    "exact_duplicates_removed": 46,
+    "unique_feature_vectors": 4832,
+    "salary_min": 3000.0,
+    "salary_max": 38000.0,
+    "salary_median": 14000.0,
+    "salary_multiple_of_1000_fraction": 1.0,
+    "category_counts": {
+      "Entreprise": {
+        "Accenture Maroc": 284,
+        "Atos Maroc": 237,
+        "CGI Maroc": 242,
+        "Capgemini Maroc": 233,
+        "Cisco Maroc": 270,
+        "Dell Technologies Maroc": 247,
+        "Deloitte Digital Maroc": 240,
+        "EY Digital Maroc": 245,
+        "HP Maroc": 240,
+        "Huawei Maroc": 257,
+        "IBM Maroc": 258,
+        "KPMG Technology Maroc": 251,
+        "Lenovo Maroc": 242,
+        "Microsoft Maroc": 252,
+        "Oracle Maroc": 259,
+        "Orange Business Services Maroc": 261,
+        "PWC Digital Maroc": 240,
+        "SAP Maroc": 276,
+        "Sopra Steria Maroc": 235,
+        "Tata Consultancy Services Maroc": 231
+      },
+      "Profil": {
+        "Architecte Solutions": 503,
+        "Business Intelligence": 526,
+        "Chef de Projet IT": 474,
+        "Cloud Engineer": 500,
+        "Data Scientist / IA": 518,
+        "DevOps Engineer": 500,
+        "Développeur Full Stack": 495,
+        "Développeur Mobile": 494,
+        "Ingénieur Cybersécurité": 488,
+        "Ingénieur Réseau": 502
+      },
+      "Niveau_Etude": {
+        "Bac+2": 250,
+        "Bac+3": 992,
+        "Doctorat": 397,
+        "Ingénieur": 1843,
+        "Master": 1518
+      },
+      "Technologie": {
+        ".NET Core": 74,
+        "API": 72,
+        "AWS": 134,
+        "Agile": 67,
+        "Android Studio": 57,
+        "Angular": 59,
+        "Ansible": 64,
+        "Azure": 72,
+        "CCNA": 87,
+        "CCNP": 69,
+        "CISSP": 73,
+        "Cisco": 71,
+        "Cloud Architecture": 81,
+        "Docker": 140,
+        "Enterprise Architecture": 70,
+        "Ethical Hacking": 69,
+        "Firewall": 79,
+        "Flutter": 69,
+        "Fortinet": 73,
+        "GitLab CI/CD": 81,
+        "Google Cloud": 63,
+        "ISO 27001": 68,
+        "Ionic": 80,
+        "JIRA": 70,
+        "Java Spring": 86,
+        "Jenkins": 66,
+        "Juniper": 67,
+        "Kanban": 59,
+        "Kotlin": 80,
+        "Kubernetes": 144,
+        "MS Project": 69,
+        "Microservices": 73,
+        "Node.js": 78,
+        "OpenStack": 81,
+        "Oracle BI": 87,
+        "PMI": 62,
+        "Palo Alto": 74,
+        "Pentest": 68,
+        "Power BI": 62,
+        "Prince2": 70,
+        "PyTorch": 72,
+        "Python": 80,
+        "Python Django": 75,
+        "QlikView": 72,
+        "R": 79,
+        "React": 56,
+        "React Native": 75,
+        "SAP BO": 60,
+        "SD-WAN": 61,
+        "SIEM": 51,
+        "SOA": 58,
+        "SQL Server": 83,
+        "Scikit-learn": 72,
+        "Scrum": 77,
+        "Security+": 80,
+        "Spark": 68,
+        "Swift": 62,
+        "System Design": 81,
+        "Tableau": 165,
+        "Talend": 73,
+        "TensorFlow": 71,
+        "Terraform": 155,
+        "UML": 68,
+        "Vue.js": 67,
+        "Xamarin": 71
+      }
+    },
+    "provenance_status": "unverified"
+  },
+  "split_sizes": {
+    "train": 2966,
+    "calibration": 990,
+    "test": 998
+  },
+  "selection_rule": "Minimum training-only 5-fold group CV MAE; test never used for selection",
+  "selected_model": "Lasso",
+  "selected_parameters": {
+    "model__alpha": 1.0
+  },
+  "selected_test_metrics": {
+    "r2": 0.9246802634862286,
+    "mae_mad": 1142.9469688574043,
+    "rmse_mad": 1469.885934205985
+  },
+  "selected_test_bootstrap_95": {
+    "r2": [
+      0.9177729987990264,
+      0.9309278530727453
+    ],
+    "mae_mad": [
+      1085.733539135539,
+      1198.314100272424
+    ],
+    "rmse_mad": [
+      1387.3041922010677,
+      1560.1036095559696
+    ]
+  },
+  "interval": {
+    "alpha": 0.1,
+    "radius_mad": 2433.2309818261892,
+    "test_coverage": 0.9198396793587175,
+    "mean_width_mad": 4866.4619636523785
+  },
+  "residual_diagnostics": {
+    "mean_residual_mad": 48.61045577638205,
+    "std_residual_mad": 1469.8184850301384,
+    "jarque_bera": {
+      "statistic": 139.0518877605615,
+      "p_value": 6.386548633599683e-31,
+      "null": "Résidus normalement distribués"
+    },
+    "bias_t_test": {
+      "statistic": 1.044795416720586,
+      "p_value": 0.29637078102367764,
+      "null": "Erreur moyenne nulle"
+    },
+    "breusch_pagan_koenker": {
+      "statistic": 50.68570029955421,
+      "p_value": 9.856892593470627e-12,
+      "f_statistic": 26.618553005060633,
+      "f_p_value": 5.47478400628802e-12,
+      "null": "Variance constante par rapport à prédiction et expérience"
+    },
+    "interpretation": "Tests exploratoires, p-values non corrigées. Indépendance non vérifiable sans identifiants. Aucune conclusion causale."
+  },
+  "shap_sample_size": 200,
+  "model_sha256": "5f476216bb943e93d8746d526b18f66f594a01ab11eaed8d2ea60a7c32507c8e",
+  "python": "3.12.10",
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "shap": "0.49.1",
+    "statsmodels": "0.14.5",
+    "joblib": "1.6.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "mean_residual_mad": 48.61045577638205,
+  "std_residual_mad": 1469.8184850301384,
+  "jarque_bera": {
+    "statistic": 139.0518877605615,
+    "p_value": 6.386548633599683e-31,
+    "null": "Résidus normalement distribués"
+  },
+  "bias_t_test": {
+    "statistic": 1.044795416720586,
+    "p_value": 0.29637078102367764,
+    "null": "Erreur moyenne nulle"
+  },
+  "breusch_pagan_koenker": {
+    "statistic": 50.68570029955421,
+    "p_value": 9.856892593470627e-12,
+    "f_statistic": 26.618553005060633,
+    "f_p_value": 5.47478400628802e-12,
+    "null": "Variance constante par rapport à prédiction et expérience"
+  },
+  "interpretation": "Tests exploratoires, p-values non corrigées. Indépendance non vérifiable sans identifiants. Aucune conclusion causale."
+}
